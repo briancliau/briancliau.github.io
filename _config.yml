@@ -55,6 +55,7 @@ skills:
     - Multimeter
     - Oscilloscope
   - category: PCB Design
+    tools:
     - Altium Designer
     - Altium
     - KiCad
@@ -125,9 +126,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  # interesting assignments:
-  #   output: true
-  #   permalink: /assignments/:path/
+  interesting assignments:
+    output: true
+    permalink: /assignments/:path/
 
 
 markdown: kramdown
@@ -148,7 +149,7 @@ plugins:
 
 include:
   - _projects
-  # - _assignments
+  - _assignments
 
 
 # Exclude from processing.
