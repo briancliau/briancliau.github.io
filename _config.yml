@@ -59,8 +59,10 @@ skills:
     - Altium Designer
     - Altium
     - KiCad
-  - category: Coding and Analysis
+  - category: Hardware Description Langugaes and Coding Languages
     tools:
+    - VHDL
+    - SystemVerilog
     - MATLAB
     - C++
     - C
