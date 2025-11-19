@@ -41,7 +41,6 @@ external-links:    # input only your own url slug. The icons with missing entrie
   youtube:           # https://youtube.com/@{your url slug} 
   discord:            # https://discord.com/users/{your url slug} 
   bluesky:           # https://bsky.app/profile/{your url slug} 
-  
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
@@ -68,7 +67,7 @@ skills:
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
-formspree-key:   https://formspree.io/f/{8-digit key}
+formspree-key:   https://formspree.io/f/xwpyqkge
 
 
 
@@ -126,6 +125,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  interesting assignments:
+    output: true
+    permalink: /assignments/:path/
 
 
 markdown: kramdown
@@ -146,6 +148,7 @@ plugins:
 
 include:
   - _projects
+  - _assignments
 
 
 # Exclude from processing.
