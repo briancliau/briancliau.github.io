@@ -148,7 +148,7 @@ plugins:
 
 include:
   - _projects
-  - _assignments
+  # - _assignments
 
 
 # Exclude from processing.
