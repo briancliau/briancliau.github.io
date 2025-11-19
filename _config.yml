@@ -128,9 +128,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  interesting assignments:
+  academic-projects:
     output: true
-    permalink: /assignments/:path/
+    permalink: /academic-projects/:path/
 
 
 markdown: kramdown
@@ -151,7 +151,7 @@ plugins:
 
 include:
   - _projects
-  - _assignments
+  - _academic-projects
 
 
 # Exclude from processing.
