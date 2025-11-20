@@ -24,8 +24,8 @@ resume-url: /assets/resume/Resume___Brian_Liau.pdf
 # Set up external links - this will show up as small icons next to your name.
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
-  linkedin: https://linkedin.com/in/https://www.linkedin.com/in/brian-liau-ab9015292/
-  github: https://github.com/briancliau
+  linkedin: https://www.linkedin.com/in/brian-liau-ab9015292/
+  github: https://github.com/briancliau/
   stackoverflow:      # https://stackoverflow.com/users/{your url slug}
   medium:            # https://medium.com/@{your url slug} 
   x-twitter:   # https://x.com/{your url slug} 
