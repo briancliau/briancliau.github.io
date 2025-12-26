@@ -170,8 +170,10 @@ Potential extensions to this project include:
 
 This project provided hands-on experience translating an ISA specification into a functioning hardware implementation, emphasizing the relationship between instruction semantics, datapath design, and control logic.
 
+---
+
 # Files
-All files are accessible here: [Github Files]((https://github.com/briancliau/briancliau.github.io/tree/main/_projects/Single-Cycle-Processor-(LEGv8)/VHDL-files))
+All files are accessible here: [Github Files](<https://github.com/briancliau/briancliau.github.io/tree/main/_projects/Single-Cycle-Processor-(LEGv8)/VHDL-files>)
 
 
 
