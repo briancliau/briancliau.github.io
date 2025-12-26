@@ -1,111 +1,168 @@
 ---
 layout: post
-title: Single Cycle Processor (LEGv8)
-description:  Created a single cycle ARM processor that executes a subset of LEGv8 instructions. It consists of a register file, program counter, instruction memory, ALU, data memory, sign extension unit, and control signal units.
+title: Single-Cycle LEGv8 Processor Design & Verification
+description: Designed and verified a single-cycle LEGv8 processor implementing an ARM instruction subset, including datapath design, control logic, and functional validation using assembly test programs.
 skills: 
   - VHDL
+  - GHDL
   - GTKWave
   - Waveform Analysis
   - LEGv8
-  - Computer Organization
+  - Computer Architecture
     
 main-image: /Single Cycle Processor.PNG
 ---
 
----
-# Header 1 
-Used for the title (already generated automatically at the top)
-## Header 2  
-Use this for the header of each section
-### Header 3 
-Use this to have subsection if needed
+# Subset of LEGv8 Instructions
 
+This processor implements a functional subset of the ARM LEGv8 instruction set, sufficient to demonstrate arithmetic operations, memory access, and control flow.
 
-## Embedding images 
-### External images
-{% include image-gallery.html images="https://live.staticflickr.com/65535/52821641477_d397e56bc4_k.jpg, https://live.staticflickr.com/65535/52822650673_f074b20d90_k.jpg" height="400"%}
-<span style="font-size: 10px">"Starship Test Flight Mission" from https://www.flickr.com/photos/spacex/52821641477/</span>  
-You can put in multiple entries. All images will be at a fixed height in the same row. With smaller window, they will switch to columns.  
+**Supported instruction categories:**
+- **Arithmetic / Logic**: `ADD`, `SUB`, `AND`, `ORR`
+- **Immediate operations**: `ADDI`, `SUBI`
+- **Memory access**: `LDUR`, `STUR`
+- **Control flow**: `B`, `CBZ`
 
-### Embeed images
-{% include image-gallery.html images="project2.jpg" height="400" %} 
-place the images in project folder/images then update the file path.   
+All supported instructions execute in a single clock cycle in accordance with the LEGv8 instruction format and semantics.
 
-
-## Embedding youtube video
-The second video has the autoplay on. copy and paste the 11-digit id found in the url link. <br>
-*Example* : https://www.youtube.com/watch?v={**MhVw-MHGv4s**}&ab_channel=engineerguy
-{% include youtube-video.html id="MhVw-MHGv4s" autoplay= "false"%}
-{% include youtube-video.html id="XGC31lmdS6s" autoplay = "true" %}
-
-you can also set up custom size by specifying the width (the aspect ratio has been set to 16/9). The default size is 560 pixels x 315 pixels.  
-
-The width of the video below. Regardless of initial width, all the videos is responsive and will fit within the smaller screen.
-{% include youtube-video.html id="tGCdLEQzde0" autoplay = "false" width= "900px" %}  
-
-<br>
-
-## Adding a hozontal line
 ---
 
-## Starting a new line
-leave two spaces "  " at the end or enter <br>
+# Processor Architecture Overview
 
-## Adding bold text
-this is how you input **bold text**
+The design follows a **single-cycle processor architecture**, where each instruction completes instruction fetch, decode, execute, memory access, and write-back within one clock period.
 
-## Adding italic text
-Italicized text is the *cat's meow*.
+Key architectural characteristics:
+- 64-bit datapath and register file
+- Separate instruction and data memory
+- Hardwired control logic
+- Deterministic CPI of 1
 
-## Adding ordered list
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+This architecture prioritizes simplicity and correctness, making it well-suited for instruction-level verification and architectural exploration.
 
-## Adding unordered list
-- First item
-- Second item
-- Third item
-- Fourth item
+---
 
-## Adding code block
-```ruby
-def hello_world
-  puts "Hello, World!"
-end
-```
+# Datapath Design
 
-```python
-def start()
-  print("time to start!")
-```
+The datapath was designed to support all required LEGv8 instruction formats and execution paths.
 
-```javascript
-let x = 1;
-if (x === 1) {
-  let x = 2;
-  console.log(x);
-}
-console.log(x);
+## Major datapath components:
+- **Program Counter (PC)** with sequential and branch target update logic
+- **Instruction Memory** for instruction fetch
+- **Register File** with two read ports and one write port
+- **Arithmetic Logic Unit (ALU)** for arithmetic, logical, and comparison operations
+- **Sign Extension Unit** for immediate operands
+- **Data Memory** for load and store instructions
+- **Branch Decision Logic** for conditional and unconditional branches
 
-```
+Multiplexers controlled by the control unit ensure correct operand selection and data routing for each instruction type.
 
-## Adding external links
-[Wikipedia](https://en.wikipedia.org)
+{% include image-gallery.html images="Single Cycle Processor.PNG" height="400" %}
 
+---
 
-## Adding block quote
-> A blockquote would look great if you need to highlight something
+# Control Unit Design
 
+A **hardwired control unit** decodes LEGv8 opcodes and generates all necessary control signals in a single cycle.
 
-## Adding table 
+## Control signals generated include:
+- Register write enable
+- ALU operation control
+- Memory read and write enable
+- ALU operand source selection
+- Branch enable and PC source selection
 
-| Header 1 | Header 2 |
-|----------|----------|
-| Row 1, Col 1 | Row 1, Col 2 |
-| Row 2, Col 1 | Row 2, Col 2 |
+The control unit ensures that only the required datapath components are activated for each instruction, maintaining correctness across all supported operations.
 
-make sure to leave aline betwen the table and the header
+---
 
+# Implementation Details
 
+The processor was implemented in **VHDL**, with each major functional block separated into modular components.
+
+## Design characteristics:
+- Structural VHDL used for datapath interconnections
+- Behavioral VHDL used for ALU and control logic
+- Signal naming and module organization aligned with LEGv8 architectural conventions
+
+This modular structure simplifies debugging and enables future extensions such as pipelining or multi-cycle execution.
+
+---
+
+# Verification and Testing
+
+Processor correctness was verified using **custom LEGv8 assembly test programs**.
+
+## Verification methodology:
+1. Assembly programs loaded into instruction memory
+2. Processor execution simulated cycle-by-cycle
+3. Signal behavior inspected using GTKWave
+4. Register and memory states compared against expected results
+
+Verification confirmed:
+- Correct arithmetic and logical results
+- Proper memory load/store behavior
+- Accurate branch target computation
+- Correct program counter updates
+
+## Instruction Memory 1
+1. ADDI X9, X9, 1
+2. ADD  X10, X9, X11
+3. STUR X10, [X11, 0] 
+4. LDUR X12, [X11, 0]
+5. CBZ X9, 2
+6. B 3
+7. ADD X9, X10, X11
+8. ADD X9, X10, X11
+9. ADDI  X9, X9, 1 
+10. ADD   X21, X10, X9
+{% include image-gallery.html images="p1.png" height="400" %}
+
+## Instruction Memory 2
+1. ADDI X10, X11, 1
+2. ADDI X10, X11, 2
+3. ADDI X9, X9, 1
+4. SUBI X9, X9, 1
+5. ADD  X10, X9, X11
+{% include image-gallery.html images="comp.png" height="400" %}
+
+## Instruction Memory 3
+1. STUR X10, [X11, 0]
+2. LDUR X10, [X9, 0]
+{% include image-gallery.html images="ldstr.png" height="400" %}
+
+---
+
+# Results and Observations
+
+- All implemented instructions executed correctly within a single clock cycle
+- Branch instructions correctly altered control flow
+- Load and store instructions accessed memory as expected
+- Critical path length highlighted timing limitations of single-cycle designs
+
+This reinforced the trade-offs between simplicity and clock frequency in processor architecture.
+
+---
+
+# Skills Demonstrated
+
+- CPU datapath and control unit design
+- ARM LEGv8 instruction decoding
+- VHDL-based hardware development
+- Simulation and waveform analysis
+- Assembly-level processor verification
+- Computer architecture fundamentals
+
+---
+
+# Future Improvements
+
+Potential extensions to this project include:
+- Adding hazard detection and forwarding logic
+- Expanding the supported LEGv8 instruction subset
+- Performing performance comparisons across architectures
+
+---
+
+# Key Takeaway
+
+This project provided hands-on experience translating an ISA specification into a functioning hardware implementation, emphasizing the relationship between instruction semantics, datapath design, and control logic.
