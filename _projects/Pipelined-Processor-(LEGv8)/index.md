@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pipelined LEGv8 Processor with Hazard Detection & Forwarding
-description: Designed and verified a **5-stage pipelined LEGv8 processor** implementing an ARM instruction subset and correctly handling **data hazards**, **load-use hazards**, and **control hazards**, using forwarding and stalling mechanisms
+description: Designed and verified a 5-stage pipelined LEGv8 processor implementing an ARM instruction subset and correctly handling data hazards, load-use hazards, and control hazards, using forwarding and stalling mechanisms
 skills: 
   - VHDL
   - GHDL
@@ -217,3 +217,4 @@ This project demonstrated how instruction-level parallelism improves processor p
 
 # Files
 All files are accessible here: [Github Files](<https://github.com/briancliau/briancliau.github.io/tree/main/_projects/Pipelined-Processor-(LEGv8)/VHDL-files>)
+
