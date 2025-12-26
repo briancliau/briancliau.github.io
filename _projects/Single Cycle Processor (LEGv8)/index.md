@@ -10,7 +10,7 @@ skills:
   - LEGv8
   - Computer Architecture
     
-main-image: "Single Cycle Processor".PNG
+main-image: /Single Cycle Processor.PNG
 ---
 
 # Subset of LEGv8 Instructions
@@ -167,6 +167,7 @@ Potential extensions to this project include:
 # Key Takeaway
 
 This project provided hands-on experience translating an ISA specification into a functioning hardware implementation, emphasizing the relationship between instruction semantics, datapath design, and control logic.
+
 
 
 
