@@ -56,7 +56,7 @@ The datapath was designed to support all required LEGv8 instruction formats and 
 
 Multiplexers controlled by the control unit ensure correct operand selection and data routing for each instruction type.
 
-{% include image-gallery.html images="Single Cycle Processor.PNG" height="400" %}
+{% include image-gallery.html images="/images/Single Cycle Processor.PNG" height="400" %}
 
 ---
 
@@ -115,7 +115,7 @@ Verification confirmed:
 8. `ADD X9, X10, X11`
 9. `ADDI  X9, X9, 1` 
 10. `ADD   X21, X10, X9`
-{% include image-gallery.html images="p1.PNG" height="400" %}
+{% include image-gallery.html images="/images/p1.PNG" height="400" %}
 
 ## Instruction Memory 2
 1. `ADDI X10, X11, 1`
@@ -123,12 +123,12 @@ Verification confirmed:
 3. `ADDI X9, X9, 1`
 4. `SUBI X9, X9, 1`
 5. `ADD  X10, X9, X11`
-{% include image-gallery.html images="comp.PNG" height="400" %}
+{% include image-gallery.html images="/images/comp.PNG" height="400" %}
 
 ## Instruction Memory 3
 1. `STUR X10, [X11, 0]`
 2. `LDUR X10, [X9, 0]`
-{% include image-gallery.html images="ldstr.PNG" height="400" %}
+{% include image-gallery.html images="/images/ldstr.PNG" height="400" %}
 
 ---
 
@@ -166,5 +166,6 @@ Potential extensions to this project include:
 # Key Takeaway
 
 This project provided hands-on experience translating an ISA specification into a functioning hardware implementation, emphasizing the relationship between instruction semantics, datapath design, and control logic.
+
 
 
