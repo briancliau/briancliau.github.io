@@ -10,7 +10,7 @@ skills:
   - LEGv8
   - Computer Architecture
     
-main-image: /images/Single Cycle Processor.PNG
+main-image: Single Cycle Processor.PNG
 ---
 
 # Subset of LEGv8 Instructions
@@ -115,6 +115,7 @@ Verification confirmed:
 8. `ADD X9, X10, X11`
 9. `ADDI  X9, X9, 1` 
 10. `ADD   X21, X10, X9`
+![Waveform for P1 instruction memory](images/p1.jpg)
 {% include image-gallery.html images="p1.jpg" height="400" %}
 
 ## Instruction Memory 2
@@ -166,6 +167,7 @@ Potential extensions to this project include:
 # Key Takeaway
 
 This project provided hands-on experience translating an ISA specification into a functioning hardware implementation, emphasizing the relationship between instruction semantics, datapath design, and control logic.
+
 
 
 
