@@ -9,7 +9,7 @@ skills:
   - LEGv8
   - Computer Organization
     
-main-image: /"Single Cycle Processor".png
+main-image: /Single Cycle Processor.PNG
 ---
 
 ---
@@ -107,4 +107,5 @@ console.log(x);
 | Row 2, Col 1 | Row 2, Col 2 |
 
 make sure to leave aline betwen the table and the header
+
 
