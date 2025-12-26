@@ -124,7 +124,7 @@ Verification confirmed:
 3. `ADDI X9, X9, 1`
 4. `SUBI X9, X9, 1`
 5. `ADD  X10, X9, X11`
-{% include image-gallery.html images="images/comp.jg" height="400" %}
+{% include image-gallery.html images="images/comp.jgg" height="400" %}
 
 
 ## Instruction Memory 3
