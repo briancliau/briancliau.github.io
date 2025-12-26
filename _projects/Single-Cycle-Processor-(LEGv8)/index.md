@@ -116,7 +116,7 @@ Verification confirmed:
 9. `ADDI  X9, X9, 1` 
 10. `ADD   X21, X10, X9`
 ![Waveform for Instruction Memory 1](https://github.com/briancliau/briancliau.github.io/blob/main/_projects/Single%20Cycle%20Processor%20(LEGv8)/images/p1.jpg)
-{% include image-gallery.html images="p1.jpg" height="400" %}
+{% include image-gallery.html images="images/p1.jpg" height="400" %}
 
 ## Instruction Memory 2
 1. `ADDI X10, X11, 1`
