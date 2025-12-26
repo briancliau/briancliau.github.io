@@ -115,7 +115,7 @@ Verification confirmed:
 8. `ADD X9, X10, X11`
 9. `ADDI  X9, X9, 1` 
 10. `ADD   X21, X10, X9`
-![Waveform for Instruction Memory 1](https://github.com/briancliau/briancliau.github.io/blob/main/_projects/Single%20Cycle%20Processor%20(LEGv8)/Single%20Cycle%20Processor.PNG)
+![Waveform for Instruction Memory 1](https://github.com/briancliau/briancliau.github.io/blob/main/_projects/Single%20Cycle%20Processor%20(LEGv8)/images/p1.jpg)
 {% include image-gallery.html images="p1.jpg" height="400" %}
 
 ## Instruction Memory 2
@@ -167,6 +167,7 @@ Potential extensions to this project include:
 # Key Takeaway
 
 This project provided hands-on experience translating an ISA specification into a functioning hardware implementation, emphasizing the relationship between instruction semantics, datapath design, and control logic.
+
 
 
 
