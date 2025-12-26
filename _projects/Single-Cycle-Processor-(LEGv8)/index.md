@@ -117,18 +117,21 @@ Verification confirmed:
 10. `ADD   X21, X10, X9`
 {% include image-gallery.html images="images/p1.jpg" height="400" %}
 
+
 ## Instruction Memory 2
 1. `ADDI X10, X11, 1`
 2. `ADDI X10, X11, 2`
 3. `ADDI X9, X9, 1`
 4. `SUBI X9, X9, 1`
 5. `ADD  X10, X9, X11`
-{% include image-gallery.html images="images/comp.png" height="400" %}
+{% include image-gallery.html images="images/comp.jg" height="400" %}
+
 
 ## Instruction Memory 3
 1. `STUR X10, [X11, 0]`
 2. `LDUR X10, [X9, 0]`
-{% include image-gallery.html images="images/ldstr.png" height="400" %}
+{% include image-gallery.html images="images/ldstr.jpg" height="400" %}
+
 
 ---
 
