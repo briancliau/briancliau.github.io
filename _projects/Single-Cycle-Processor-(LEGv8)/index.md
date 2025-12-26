@@ -56,7 +56,7 @@ The datapath was designed to support all required LEGv8 instruction formats and 
 
 Multiplexers controlled by the control unit ensure correct operand selection and data routing for each instruction type.
 
-{% include image-gallery.html images="Single Cycle Processor.jpg" height="400" %}
+{% include image-gallery.html images="images/Single Cycle Processor.jpg" height="400" %}
 
 ---
 
@@ -115,7 +115,6 @@ Verification confirmed:
 8. `ADD X9, X10, X11`
 9. `ADDI  X9, X9, 1` 
 10. `ADD   X21, X10, X9`
-![Waveform for Instruction Memory 1](https://github.com/briancliau/briancliau.github.io/blob/main/_projects/Single%20Cycle%20Processor%20(LEGv8)/images/p1.jpg)
 {% include image-gallery.html images="images/p1.jpg" height="400" %}
 
 ## Instruction Memory 2
@@ -124,13 +123,12 @@ Verification confirmed:
 3. `ADDI X9, X9, 1`
 4. `SUBI X9, X9, 1`
 5. `ADD  X10, X9, X11`
-{% include image-gallery.html images="/projects/Single%20Cycle%20Processor%20(LEGv8)/images/comp.png" height="400" %}
-<img src="(https://github.com/briancliau/briancliau.github.io/blob/main/_projects/Single%20Cycle%20Processor%20(LEGv8)/images/comp.jpg)" alt="Waveform for Instruction Memory 2" width="500" height="300">
+{% include image-gallery.html images="images/comp.png" height="400" %}
 
 ## Instruction Memory 3
 1. `STUR X10, [X11, 0]`
 2. `LDUR X10, [X9, 0]`
-{% include image-gallery.html images="/projects/Single%20Cycle%20Processor%20(LEGv8)/images/ldstr.png" height="400" %}
+{% include image-gallery.html images="images/ldstr.png" height="400" %}
 
 ---
 
