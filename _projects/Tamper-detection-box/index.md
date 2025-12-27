@@ -97,8 +97,4 @@ The circuit was tested under various environmental conditions to ensure reliabil
 * **Latching Mechanism**: Implementing a Thyristor (SCR) so the alarm remains active even if the box is quickly re-closed.
 * **Battery Integration**: Adding a 9V-to-5V regulator for independent, battery-powered operation.
 * **Remote Notification**: Integrating an ESP8264 to send a Wi-Fi alert to a central monitoring station upon trigger.
-
----
-
-# Files
-All schematics and parts lists are accessible here: [Github Files](https://github.com/yourusername/Tamper-Detection-Box)
+  
