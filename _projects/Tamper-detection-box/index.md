@@ -30,11 +30,6 @@ The design is built around a $5V$ power rail, using a transistor to drive the lo
 
 {% include image-gallery.html images="boxschematic.PNG" height="400" %}
 
-
-
-[Image of an N-channel MOSFET switching circuit diagram]
-
-
 ### Core Components:
 * **Photoresistor (LDR)**: Connected to $V_{cc}$ ($5V$); its resistance drops significantly when exposed to light, allowing current to reach the transistor gate.
 * **Transistor**: Acts as the "logic gate" for the circuit, switching the $5V$ rail to the output components.
