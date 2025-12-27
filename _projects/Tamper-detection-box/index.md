@@ -28,7 +28,7 @@ The **Tamper Detection Box** is an active hardware security solution designed to
 
 The design is built around a $5V$ power rail, using a transistor to drive the load based on the resistance of a photoresistor (LDR).
 
-{% include image-gallery.html images="boxschematic.png" height="400" %}
+{% include image-gallery.html images="boxschematic.PNG" height="400" %}
 
 
 ### Core Components:
@@ -98,3 +98,4 @@ The circuit was tested under various environmental conditions to ensure reliabil
 * **Battery Integration**: Adding a 9V-to-5V regulator for independent, battery-powered operation.
 * **Remote Notification**: Integrating an ESP8264 to send a Wi-Fi alert to a central monitoring station upon trigger.
   
+
