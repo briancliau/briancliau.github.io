@@ -17,7 +17,7 @@ main-image: /line-following-bot.png
 
 The line-following bot is a compact, autonomous vehicle designed for precision lane following and environmental interaction.
 
-{% include image-gallery.html images="3d_spec.png" height="300" %}
+{% include image-gallery.html images="3d_spec.png" height="250" %}
 {% include image-gallery.html images="full_3d_model.png" height="300" %}
 
 **Physical Dimensions:**
@@ -34,9 +34,7 @@ The chassis and sensor housings were custom-designed using CAD to minimize weigh
 
 The robot's intelligence is powered by an **Arduino UNO WiFi R2**, interfacing with several custom-built sensor modules.
 
-{% include image-gallery.html images="wiring_diagram.png" height="400" %}
-
-Circuit Design & Schematics
+## Circuit Design & Schematics
 
 The reliability of the bot relies on the precise design of its custom sensor circuits.
 
@@ -44,7 +42,7 @@ The reliability of the bot relies on the precise design of its custom sensor cir
 The L293D H-Bridge allows for bi-directional control of the DC motors, separating the high-current motor power from the Arduino logic.
 
 
-{% include image-gallery.html images="h_bridge_circuit.png" height="300" %}
+{% include image-gallery.html images="h_bridge_circuit.png" height="400" %}
 
 ## Color Sensor Array
 The color sensor uses a combination of Red and Blue LEDs with photoresistors. By measuring the reflected light intensities (analog values), the bot identifies lane colors.
@@ -68,8 +66,9 @@ To ensure operational reliability, we implemented a dedicated monitoring system:
 * **Visual Indicators**: If voltage drops below 7.4V, specific red LEDs trigger to signal low health.
 * **Status Mapping**: The left red LED is for the motor, while the right LED is for the Arduino.
 
-
-{% include image-gallery.html images="battery_divider_1.png,battery_divider_2.png" height="300" %}
+{% include image-gallery.html images="battery_divider_1.png" height="400" %}
+{% include image-gallery.html images="battery_divider_2.png" height="400" %}
+ 
 
 ### Optimized Aesthetics & Weight
 * **Protoboard Integration**: Sensors were moved from breadboards to protoboards to optimize the size and weight of the bot.
@@ -139,4 +138,5 @@ The complete source code and design files are available here: [GitHub Repository
 # Solo Bot Run
 
 # Joint Bot Run 
+
 
