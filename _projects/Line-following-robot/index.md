@@ -137,6 +137,31 @@ The complete source code and design files are available here: [GitHub Repository
 ---
 # Solo Bot Run
 
+**Solo Run on Red**
+{% include youtube-video.html id="RM3fEoaurXY" autoplay= "false"%}
+
+**Solo Run on Red in the Dark**
+{% include youtube-video.html id="Uhu8LMgi88E" autoplay= "false"%}
+
+**Solo Run on Blue**
+{% include youtube-video.html id="ezNfb6ZLThQ" autoplay= "false"%}
+
+**Solo Run on Blue in the Dark**
+{% include youtube-video.html id="Hgj3TCh-Jvw" autoplay= "false"%}
+
+---
+
 # Joint Bot Run 
 
+**Joint Run on Red**
+{% include youtube-video.html id="D505aEZXk6c" autoplay= "false"%}
+
+**Joint Run on Red in the Dark**
+{% include youtube-video.html id="PH6453jiCgk" autoplay= "false"%}
+
+**Joint Run on Blue**
+{% include youtube-video.html id="khi-zhsDYgg" autoplay= "false"%}
+
+**Joint Run on Blue in the Dark**
+{% include youtube-video.html id="tFQC3VMh7bM" autoplay= "false"%}
 
