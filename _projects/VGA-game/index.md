@@ -10,7 +10,7 @@ skills:
   - I2C Communication
   - Embedded Systems
   - Hardware/Software Co-Design
-main-image: /fpga.png
+main-image: /bit-golf-thumbnail.png
 ---
 
 # Project Overview
@@ -181,6 +181,7 @@ All source code and design files are available here:
 [GitHub Repository – Bit Golf](https://github.com/Jet4stream/Minigolf-Project)
 
 ---
+
 
 
 
