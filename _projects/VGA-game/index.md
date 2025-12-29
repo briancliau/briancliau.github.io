@@ -10,7 +10,7 @@ skills:
   - I2C Communication
   - Embedded Systems
   - Hardware/Software Co-Design
-main-image: /bit-golf.png
+main-image: /fpga.webp
 ---
 
 # Project Overview
@@ -19,8 +19,15 @@ main-image: /bit-golf.png
 
 The system was designed using modular **VHDL components**, emphasizing clarity, reusability, and precise timing control across graphics, input handling, and game logic.
 
-{% include image-gallery.html images="bit-golf.png" height="300" %}
+**Starting Screen**
+{% include image-gallery.html images="bit-golf.png" height=500" %}
+
+
+**Game Screen**
 {% include image-gallery.html images="game_screen.jpg" height="300" %}
+
+
+**End Screen**
 {% include image-gallery.html images="end_screen.jpg" height="300" %}
 
 ---
@@ -174,4 +181,5 @@ All source code and design files are available here:
 [GitHub Repository – Bit Golf](https://github.com/Jet4stream/Minigolf-Project)
 
 ---
+
 
