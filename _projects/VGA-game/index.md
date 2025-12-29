@@ -20,7 +20,7 @@ main-image: /bit-golf-thumbnail.png
 The system was designed using modular **VHDL components**, emphasizing clarity, reusability, and precise timing control across graphics, input handling, and game logic.
 
 **Starting Screen**
-{% include image-gallery.html images="bit-golf.png" height=500" %}
+{% include image-gallery.html images="bit-golf.png" height="500" %}
 
 
 **Game Screen**
@@ -36,6 +36,7 @@ The system was designed using modular **VHDL components**, emphasizing clarity, 
 
 The game is composed of multiple interacting hardware components, each responsible for a specific subsystem.
 
+**Block Diagram**
 {% include image-gallery.html images="block-diagram.png" height="350" %}
 
 ### Major Components
@@ -181,6 +182,7 @@ All source code and design files are available here:
 [GitHub Repository – Bit Golf](https://github.com/Jet4stream/Minigolf-Project)
 
 ---
+
 
 
 
