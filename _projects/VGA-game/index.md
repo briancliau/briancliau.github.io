@@ -29,7 +29,7 @@ The system was designed using modular **VHDL components**, emphasizing clarity, 
 
 The game is composed of multiple interacting hardware components, each responsible for a specific subsystem.
 
-{% include image-gallery.html images="block_diagram.png" height="350" %}
+{% include image-gallery.html images="block-diagram.png" height="350" %}
 
 ### Major Components
 * **Nunchuck Interface (I2C)**
@@ -174,3 +174,4 @@ All source code and design files are available here:
 [GitHub Repository – Bit Golf](https://github.com/Jet4stream/Minigolf-Project)
 
 ---
+
