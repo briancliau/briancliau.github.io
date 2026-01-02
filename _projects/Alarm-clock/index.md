@@ -19,7 +19,7 @@ This project is an **alarm clock designed entirely from discrete integrated circ
 
 The primary objective is to build a **fully functional, reliable digital alarm clock** while gaining a deep understanding of **timekeeping, synchronous logic, and hardware-only system design**.
 
-🚧 **Status**: In Active Development
+**Status**: In Active Development
 
 ---
 
@@ -27,13 +27,13 @@ The primary objective is to build a **fully functional, reliable digital alarm c
 
 This project is governed by strict constraints to emphasize fundamental hardware design:
 
-* ❌ No microcontrollers
-* ❌ No firmware or software timing
-* ❌ No programmable logic
-* ✅ Only off-the-shelf logic ICs
-* ✅ Crystal-based time reference
-* ✅ Fully schematic-driven design
-* ✅ Custom PCB implementation
+* No microcontrollers
+* No firmware or software timing
+* No programmable logic
+* Only off-the-shelf logic ICs
+* Crystal-based time reference
+* Fully schematic-driven design
+* Custom PCB implementation
 
 All system behavior must emerge from hardware logic alone.
 
@@ -134,13 +134,13 @@ All button interactions are translated into clean logic-level pulses without sof
 
 # Current Progress
 
-✔️ Component selection finalized  
-✔️ Time base architecture validated  
-✔️ Initial counter and comparator schematics drafted  
-✔️ Display driver logic verified  
-⏳ PCB layout in progress  
-⏳ Alarm logic integration  
-⏳ Full system bring-up and testing  
+* Component selection finalized  
+* Time base architecture validated  
+* Initial counter and comparator schematics drafted  
+* Display driver logic verified  
+* PCB layout in progress  
+* Alarm logic integration  
+* Full system bring-up and testing  
 
 ---
 
@@ -180,9 +180,9 @@ This project focuses on several non-trivial hardware challenges:
 
 # Project Status
 
-🚧 **Status**: In Active Development  
-📅 **Start Date**: Fall 2025  
-🎯 **Target Completion**: TBD  
+**Status**: In Active Development  
+**Start Date**: October 2025  
+**Target Completion**: February 2026  
 
 ---
 
@@ -192,3 +192,4 @@ Schematics, PCB layouts, and documentation will be published here upon completio
 [GitHub Repository – Coming Soon](#)
 
 ---
+
