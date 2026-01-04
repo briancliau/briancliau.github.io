@@ -37,15 +37,17 @@ external-links:    # input only your own url slug. The icons with missing entrie
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
-  - category: Hardware Description Langugaes and Coding Languages
+  - category: Digital Design & Verification
     tools:
-    - VHDL
     - SystemVerilog
+    - VHDL
     - GTKWave
     - MATLAB
+  - category: Coding Languages
+    tools:
     - C++
     - C
-    - Arduino
+    - MATLAB
   - category: Digital Signal Processing 
     tools:
     - Filter Design (FIR, IIR, Lowpass, Highpass)
