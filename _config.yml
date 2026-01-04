@@ -37,6 +37,21 @@ external-links:    # input only your own url slug. The icons with missing entrie
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
+  - category: Hardware Description Langugaes and Coding Languages
+    tools:
+    - VHDL
+    - SystemVerilog
+    - GTKWave
+    - MATLAB
+    - C++
+    - C
+    - Arduino
+  - category: Digital Signal Processing 
+    tools:
+    - Filter Design (FIR, IIR, Lowpass, Highpass)
+    - Frequency Domain Analysis (DFT/FFT, DCT, Spectral Leakage, Windowing)
+    - Signal Fundamentals (Sampling Theorem (Nyquist), Aliasing, Reconstruction, Convolution)
+    - MATLAB, Signal Processing Toolbox
   - category: Prototyping
     tools:
     - Arduino / Raspberry Pi
@@ -52,15 +67,7 @@ skills:
     - Altium Designer
     - Altium
     - KiCad
-  - category: Hardware Description Langugaes and Coding Languages
-    tools:
-    - VHDL
-    - SystemVerilog
-    - GTKWave
-    - MATLAB
-    - C++
-    - C
-    - Arduino
+  
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
