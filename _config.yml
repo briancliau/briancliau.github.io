@@ -8,7 +8,7 @@ title: Brian Liau's Portfolio # This is what shows up in the tab of the browser
 name: Brian Liau
 headline: Electrical Engineering Major at Tufts University - Class of 2027
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  My work focuses on embedded systems, PCB design, and hardware prototyping. I’ve built projects 
+  My work focuses on RTL design, embedded systems, and hardware prototyping. I’ve built projects 
   using microcontrollers like Arduino and STM32, and enjoy solving problems at the 
   intersection of electronics, software, and system design.
 
