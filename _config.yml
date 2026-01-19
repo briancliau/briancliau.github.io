@@ -39,6 +39,8 @@ external-links:    # input only your own url slug. The icons with missing entrie
 skills:
   - category: Digital Design & Verification
     tools:
+    - Cadence
+    - CHIPKIT
     - SystemVerilog
     - VHDL
     - GTKWave
