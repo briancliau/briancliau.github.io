@@ -2,6 +2,7 @@
 layout: post
 title: AHB-Lite Bus Interconnect & Peripheral Subsystem
 description: Implemented and verified an AMBA AHB-Lite bus protocol interconnect in Verilog/SystemVerilog, featuring single-master multi-slave pipelined transfer handling, memory decoding, and peripheral interfaces.
+order: 2
 skills: 
   - SystemVerilog
   - Verilog

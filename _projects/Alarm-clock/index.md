@@ -2,6 +2,7 @@
 layout: post
 title: Discrete IC Alarm Clock (In Progress)
 description: Ongoing design of a fully discrete digital alarm clock built from fundamental logic ICs, counters, comparators, a crystal oscillator, and a custom PCB—without the use of microcontrollers or programmable logic.
+order: 8
 skills: 
   - Digital Logic Design
   - CMOS / TTL ICs

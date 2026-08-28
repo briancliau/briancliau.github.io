@@ -2,6 +2,7 @@
 layout: post
 title: RV32I Processor Core (RISC-V)
 description: Designed and verified a single-cycle RV32I RISC-V processor in Verilog, implementing the base 32-bit integer instruction set, control unit, ALU, and memory interfaces.
+order: 1
 skills: 
   - RTL Design
   - SystemVerilog
