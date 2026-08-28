@@ -40,9 +40,10 @@ skills:
   - category: Digital Design & Verification
     tools:
     - Cadence
-    - CHIPKIT
     - SystemVerilog
     - VHDL
+    - Yosys
+    - Verilator
     - GTKWave
     - MATLAB
   - category: Coding Languages
