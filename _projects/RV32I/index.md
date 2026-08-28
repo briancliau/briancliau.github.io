@@ -91,6 +91,10 @@ Verification was conducted using cycle-accurate behavioral simulation and wavefo
 
 ---
 
+# Future Improvements
+1. Finish OpenLane synthesis of the RV32I Core for PPA and timing analysis of design
+2. FPGA testing to analyze utilization reports and real-time bugs.
+
 # Skills Demonstrated
 
 - RISC-V RV32I ISA instruction decoding and execution
