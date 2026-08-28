@@ -41,6 +41,7 @@ skills:
     tools:
     - Cadence
     - SystemVerilog
+    - SystemVerilog Assertions
     - VHDL
     - Yosys
     - Verilator
