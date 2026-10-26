@@ -137,10 +137,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  academic-projects:
-    output: true
-    permalink: /academic-projects/:path/
-
 
 markdown: kramdown
 highlighter: rouge
@@ -160,8 +156,6 @@ plugins:
 
 include:
   - _projects
-  - _academic-projects
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
