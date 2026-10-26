@@ -39,11 +39,12 @@ external-links:    # input only your own url slug. The icons with missing entrie
 skills:
   - category: Digital Design & Verification
     tools:
-    - Cadence
+    - Cadence Suite (Virtuoso, Genus, Innovus)
     - SystemVerilog
     - SystemVerilog Assertions
     - VHDL
     - Yosys
+    - OpenLane2
     - Verilator
     - GTKWave
     - MATLAB
@@ -52,6 +53,7 @@ skills:
     - C++
     - C
     - MATLAB
+    - Python
   - category: Digital Signal Processing 
     tools:
     - Filter Design (FIR, IIR, Lowpass, Highpass)
