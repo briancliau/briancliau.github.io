@@ -2,6 +2,7 @@
 layout: post
 title: Line-Following Robot
 description: Designed and built an autonomous line-following robot featuring real-time battery monitoring, color sensing for lane calibration, and collision detection using an Arduino UNO WiFi R2 and custom integrated circuits.
+order: 4
 skills: 
   - Arduino (C++)
   - Circuit Design

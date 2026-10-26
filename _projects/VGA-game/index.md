@@ -2,6 +2,7 @@
 layout: post
 title: Bit Golf – FPGA VGA Game
 description: Designed and implemented an FPGA-based mini golf video game with real-time motion control using a Wii Nunchuck, VGA graphics rendering, and modular VHDL architecture on an UPduino FPGA.
+order: 3
 skills: 
   - VHDL
   - FPGA Design
