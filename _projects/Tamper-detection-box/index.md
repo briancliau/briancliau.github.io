@@ -2,6 +2,7 @@
 layout: post
 title: Tamper Detection Box
 description: A transistor-switched hardware security system that triggers an audible and visual alarm upon light exposure.
+order: 8
 skills: 
   - Circuit Design
   - Analog Electronics

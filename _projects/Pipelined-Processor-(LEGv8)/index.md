@@ -2,7 +2,7 @@
 layout: post
 title: Pipelined LEGv8 Processor with Hazard Detection & Forwarding
 description: Designed and verified a 5-stage pipelined LEGv8 processor implementing an ARM instruction subset and correctly handling data hazards, load-use hazards, and control hazards, using forwarding and stalling mechanisms
-order: 5
+order: 6
 skills: 
   - VHDL
   - GHDL

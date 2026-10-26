@@ -2,7 +2,7 @@
 layout: post
 title: 63-Tap FIR Filter Hardware Accelerator & AHB-Lite Wrapper
 description: Designed and integrated a pipelined 63-tap symmetric FIR filter hardware accelerator into an AMBA AHB-Lite SoC peripheral wrapper, featuring custom CSRs, pipelined multiplier-accumulator trees, and interrupt-driven status signaling.
-order: 1
+order: 5
 skills: 
   - SystemVerilog
   - Verilog
@@ -11,7 +11,7 @@ skills:
   - Hardware Acceleration
   - SoC Integration
   - Verilator & Simulation
-main-image: /AHB_Block_Diagram.png
+main-image: /FIR_Filter.png
 ---
 
 # Overview of FIR Filter Accelerator
@@ -85,3 +85,4 @@ This project demonstrated how to bridge high-performance digital signal processi
 
 # Files
 All source files and testbenches are accessible here: [GitHub Repository](https://github.com/briancliau/briancliau.github.io)
+FIR Filter image taken from: https://www.dsprelated.com/showarticle/1585.php

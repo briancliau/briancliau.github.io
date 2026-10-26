@@ -2,7 +2,7 @@
 layout: post
 title: Single-Cycle LEGv8 Processor Design & Verification
 description: Designed and verified a single-cycle LEGv8 processor implementing an ARM instruction subset, including datapath design, control logic, and functional validation using assembly test programs.
-order: 6
+order: 7
 skills: 
   - VHDL
   - GHDL
